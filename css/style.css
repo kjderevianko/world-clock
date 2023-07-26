@@ -1,5 +1,6 @@
 body {
-  background-color: #f9f7fe;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/291/original/josh-redd-u_RiRTA_TtY-unsplash.jpg?1690381812");
+  background-size: cover;
   font-family: sans-serif;
 }
 h1 {
@@ -21,7 +22,7 @@ select {
 .container {
   max-width: 600px;
   margin: 60px auto;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 30px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
