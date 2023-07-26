@@ -1,13 +1,13 @@
 function updateTime() {
-  // Amsterdam
-  let amsterdamElement = document.querySelector("#amsterdam");
-  if (amsterdamElement) {
-    let amsterdamDateElement = amsterdamElement.querySelector(".date");
-    let amsterdamTimeElement = amsterdamElement.querySelector(".time");
-    let amsterdamTime = moment().tz("Europe/Amsterdam");
+  // Haarlem
+  let haarlemElement = document.querySelector("#haarlem");
+  if (haarlemElement) {
+    let haarlemDateElement = haarlemElement.querySelector(".date");
+    let haarlemTimeElement = haarlemElement.querySelector(".time");
+    let haarlemTime = moment().tz("Europe/Amsterdam");
 
-    amsterdamDateElement.innerHTML = amsterdamTime.format("MMMM	Do YYYY");
-    amsterdamTimeElement.innerHTML = amsterdamTime.format(
+    haarlemDateElement.innerHTML = haarlemTime.format("dddd, MMMM Do YYYY");
+    haarlemTimeElement.innerHTML = haarlemTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
@@ -21,6 +21,19 @@ function updateTime() {
 
     kyivDateElement.innerHTML = kyivTime.format("MMMM	Do YYYY");
     kyivTimeElement.innerHTML = kyivTime.format("h:mm:ss [<small>]A[</small>]");
+  }
+  // Denver
+
+  let denverElement = document.querySelector("#denver");
+  if (denverElement) {
+    let denverDateElement = denverElement.querySelector(".date");
+    let denverTimeElement = denverElement.querySelector(".time");
+    let denverTime = moment().tz("America/Denver");
+
+    denverDateElement.innerHTML = denverTime.format("MMMM	Do YYYY");
+    denverTimeElement.innerHTML = denverTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
   }
 }
 
@@ -42,6 +55,7 @@ function updateCity(event) {
     "A"
   )}</small></div>
   </div>
+  <a href="/"> Return to world clock</a>
   `;
 }
 
